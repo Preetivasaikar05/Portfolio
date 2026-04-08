@@ -2,10 +2,6 @@ import { motion } from "framer-motion";
 import { portfolioData } from "../data/portfolioData";
 import SectionWrapper from "./SectionWrapper";
 
-const highlights = [
-  
-];
-
 const stats = [
   { value: "30+", label: "Programs Analyzed" },
   { value: "98%", label: "Reporting Accuracy" },
@@ -79,27 +75,6 @@ const About = () => {
                   </div>
                 ))}
               </div>
-
-              {highlights.map((block) => (
-                <div
-                  key={block.title}
-                  className="rounded-2xl border border-cyan-900/50 bg-[#04192a]/70 p-6 md:p-7 hover:border-cyan-400/50 transition"
-                >
-                  <p className="text-cyan-300 uppercase tracking-[0.24em] text-xs md:text-sm mb-4">
-                    {block.title}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {block.items.map((item) => (
-                      <span
-                        key={item}
-                        className="border border-cyan-900 px-4 py-2 text-slate-300 text-sm md:text-base"
-                      >
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
             </motion.div>
           </div>
         </div>

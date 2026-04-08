@@ -1,8 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { portfolioData } from "../data/portfolioData";
 
 const Hero = () => {
-  const { hero } = portfolioData;
   const { scrollY } = useScroll();
 
   const ySlow = useTransform(scrollY, [0, 500], [0, 60]);
