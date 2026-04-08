@@ -8,23 +8,25 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
+import FloatingBubbles from "./components/FloatingBubbles";
 
 function App() {
   return (
-    <div className="bg-[#031321] text-white min-h-screen overflow-x-hidden">
+    <div className="relative bg-[#031321] text-white min-h-screen overflow-x-hidden">
+      <FloatingBubbles />
       <ScrollProgress />
 
       <div className="relative z-20">
-      <Hero />
-      <Navbar />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Resume />
-      <Contact />
-      <Footer />
-    </div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Resume />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
